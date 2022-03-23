@@ -12,9 +12,6 @@ Click [here](https://harlexkhal.github.io/BookStore/) to view live demo
 ### Features implemented so far are:
 
 - Project Setup with React Installations
-- Calculator with (Add, Minus, Multiply, and Division) Features
-- Page for Mathematics Quotes
-- Home page that gives information about the history of mathematics
 
 ## Built With
 
