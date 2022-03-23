@@ -1,0 +1,54 @@
+.card {
+  width: 80%;
+  display: flex;
+  border: 1px solid rgb(221, 220, 220);
+  margin: 0 auto 30px auto;
+  background-color: #fff;
+}
+
+.action {
+  display: flex;
+  list-style: none;
+  margin-left: -40px;
+}
+
+.action li {
+  margin-right: 10px;
+}
+
+.mtminus26px {
+  margin-top: -26px;
+}
+
+.actionline {
+  height: 20px;
+  margin-top: 0;
+}
+
+.chart {
+  width: 60px;
+  height: 60px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-right: 10px solid #2274ee;
+  border-bottom: 10px solid #2274ee;
+  margin-right: 10px;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.completed {
+  margin-top: -30px;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #2274ee;
+  border: 0 solid #fff;
+  color: #fff;
+}
