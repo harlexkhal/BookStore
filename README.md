@@ -2,7 +2,7 @@
 
 > "BookStore" is a web app for adding and removing books from a library storage. It is a Single Page App (SPA) that allows users to add and remove a book
 
-![screenshot](branding/demo.png)
+![screenshot](branding/brand-demo.png)
 
 Our goal here is to Build a single page web application for book weebs using the React library
 
