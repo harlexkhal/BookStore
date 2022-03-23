@@ -1,6 +1,6 @@
 # BookStore | M3Wx
 
-> "BookStore" is a web app for adding books. It is a Single Page App (SPA) that allows users to add and remove a book
+> "BookStore" is a web app for adding and removing books from a library storage. It is a Single Page App (SPA) that allows users to add and remove a book
 
 ![screenshot](branding/demo.png)
 
