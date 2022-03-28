@@ -9,7 +9,7 @@ export const CategoryStatus = {
   UNDER_CONSTRUCTION: 'UNDER_CONSTRUCTION',
 };
 
-const reducers = (state = CategoryStatus.UNDER_CONSTRUCTION, action) => {
+const reducer = (state = CategoryStatus.UNDER_CONSTRUCTION, action) => {
   switch (action.type) {
     case SET_STATUS:
       return action.status;
@@ -18,4 +18,4 @@ const reducers = (state = CategoryStatus.UNDER_CONSTRUCTION, action) => {
   }
 };
 
-export default reducers;
+export default reducer;
