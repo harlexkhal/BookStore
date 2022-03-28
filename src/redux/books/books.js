@@ -1,18 +1,21 @@
+const ADD = 'ADD_BOOK';
+const REMOVE = 'REMOVE_BOOK';
+
 export const addBook = ({ name, category }) => ({
-  type: 'ADD_BOOK',
+  type: ADD,
   id: Date.now(),
   name,
   category,
 });
 
 export const removeBook = (id) => ({
-  type: 'REMOVE_BOOK',
+  type: REMOVE,
   id,
 });
 
-const books = (state = [], action) => {
+const reducers = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_BOOK':
+    case ADD:
       return [
         ...state,
         {
@@ -21,11 +24,11 @@ const books = (state = [], action) => {
           category: action.category,
         },
       ];
-    case 'REMOVE_BOOK':
+    case REMOVE:
       return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }
 };
 
-export default books;
+export default reducers;
