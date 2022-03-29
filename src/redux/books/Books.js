@@ -1,5 +1,5 @@
-const ADD = 'ADD_BOOK';
-const REMOVE = 'REMOVE_BOOK';
+const ADD = 'BookStore/Controller/ADD_BOOK';
+const REMOVE = 'BookStore/Controller/REMOVE_BOOK';
 
 export const addBook = ({ name, category, author }) => ({
   type: ADD,

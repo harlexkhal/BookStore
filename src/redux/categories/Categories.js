@@ -1,4 +1,4 @@
-const SET_STATUS = 'SET_STATUS';
+const SET_STATUS = 'BookStore/Controller/SET_STATUS';
 
 export const setCategoryStatus = (status) => ({
   type: SET_STATUS,
