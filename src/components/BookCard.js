@@ -1,8 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/Books';
 import book from './BookCard.module.css';
 
-function BookCard({ name, author, category }) {
+const BookCard = ({
+  id, name, author, category,
+}) => {
+  const dispatch = useDispatch();
   return (
     <div className={book.card}>
       <div className="ml-2">
@@ -10,11 +15,20 @@ function BookCard({ name, author, category }) {
         <h1 className={book.mtminus26px}>{name}</h1>
         <p className={book.mtminus26px}>{author}</p>
         <ul className={book.action}>
-          <li>Comments</li>
+          <li className={book.disabled}>Comments</li>
           <li><hr className={book.actionline} /></li>
-          <li>Remove</li>
+          <li>
+            <button
+              type="button"
+              onClick={() => {
+                dispatch(removeBook(id));
+              }}
+            >
+              Remove
+            </button>
+          </li>
           <li><hr className={book.actionline} /></li>
-          <li>Edit</li>
+          <li className={book.disabled}>Edit</li>
         </ul>
       </div>
       <div className={book.progress}>
@@ -31,9 +45,10 @@ function BookCard({ name, author, category }) {
       </div>
     </div>
   );
-}
+};
 
 BookCard.propTypes = {
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,

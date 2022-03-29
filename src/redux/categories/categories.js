@@ -5,11 +5,7 @@ export const setCategoryStatus = (status) => ({
   status,
 });
 
-export const CategoryStatus = {
-  UNDER_CONSTRUCTION: 'UNDER_CONSTRUCTION',
-};
-
-const reducer = (state = CategoryStatus.UNDER_CONSTRUCTION, action) => {
+const Reducer = (state = 'Check Status', action) => {
   switch (action.type) {
     case SET_STATUS:
       return action.status;
@@ -18,4 +14,4 @@ const reducer = (state = CategoryStatus.UNDER_CONSTRUCTION, action) => {
   }
 };
 
-export default reducer;
+export default Reducer;

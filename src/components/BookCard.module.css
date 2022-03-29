@@ -14,6 +14,20 @@
 
 .action li {
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.action li button {
+  border: transparent;
+  background-color: white;
+}
+
+.action li button:hover {
+  color: #2274ee;
+}
+
+.disabled {
+  color: #b9b9b9;
 }
 
 .mtminus26px {

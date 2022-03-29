@@ -1,11 +1,12 @@
 const ADD = 'ADD_BOOK';
 const REMOVE = 'REMOVE_BOOK';
 
-export const addBook = ({ name, category }) => ({
+export const addBook = ({ name, category, author }) => ({
   type: ADD,
   id: Date.now(),
   name,
   category,
+  author,
 });
 
 export const removeBook = (id) => ({
@@ -13,7 +14,7 @@ export const removeBook = (id) => ({
   id,
 });
 
-const reducer = (state = [], action) => {
+const Reducer = (state = [], action) => {
   switch (action.type) {
     case ADD:
       return [
@@ -22,6 +23,7 @@ const reducer = (state = [], action) => {
           id: action.id,
           name: action.name,
           category: action.category,
+          author: action.author,
         },
       ];
     case REMOVE:
@@ -31,4 +33,4 @@ const reducer = (state = [], action) => {
   }
 };
 
-export default reducer;
+export default Reducer;

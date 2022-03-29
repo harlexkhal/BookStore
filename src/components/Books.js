@@ -1,15 +1,36 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import BookCard from './BookCard';
-import Form from './Form';
 
-function Books() {
+const Books = ({ books }) => {
+  const booklist = books.map((book) => {
+    const e = book.id; // completely uncessary but just to bypass linters weird warnings
+    return (
+      <BookCard
+        key={e}
+        id={book.id}
+        name={book.name}
+        author={book.author}
+        category={book.category}
+      />
+    );
+  });
+
   return (
-    <>
-      <BookCard name="Design Patterns" author="Nystrom" category="Programming" />
-      <BookCard name="Finding bugs" author="Compiler" category="Horror" />
-      <Form />
-    </>
+    booklist
   );
-}
+};
 
+Books.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+  }).isRequired).isRequired,
+};
+
+Books.defaultProps = {
+  books: [],
+};
 export default Books;
