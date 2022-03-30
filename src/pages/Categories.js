@@ -1,11 +1,11 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import categories from '../components/Categories.module.css';
 import { setCategoryStatus } from '../redux/categories/Categories';
 
 const Page = () => {
-  const dispatch = useDispatch();
   const status = useSelector((state) => state.categories);
+  const dispatch = useDispatch();
   return (
     <button
       type="button"
