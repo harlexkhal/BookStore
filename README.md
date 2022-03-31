@@ -12,6 +12,8 @@ Click [here](https://harlexkhal.github.io/BookStore/) to view live demo
 ### Features implemented so far are:
 
 - Project Setup with React Installations
+- Redux to handle state management
+- Connected to an API endpoint to save and fetch books
 
 ## Built With
 
