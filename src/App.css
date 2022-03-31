@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+
 .mr-4 {
   margin-right: 40px;
 }
 
 .mr-7 {
   margin-right: 70px;
+}
+
+.pt-12 {
+  padding-top: 120px;
 }
 
 .mr-1 {
@@ -30,6 +37,49 @@
   margin-left: 10%;
 }
 
+.mb-3 {
+  margin-bottom: 30px;
+}
+
 .cl-blue {
   color: #2274ee;
+}
+
+.primary-font {
+  font-family: 'Montserrat', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.secondary-font {
+  font-family: 'Roboto Slab', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.o-td {
+  text-decoration: none;
+}
+
+.cl-black {
+  color: black;
+}
+
+.op-05 {
+  opacity: 0.5;
+}
+
+.fz-16 {
+  font-size: 16px;
+}
+
+.disabled-black {
+  color: #727272;
+}
+
+.disabled-blue {
+  color: rgba(54, 54, 214, 0.432);
 }

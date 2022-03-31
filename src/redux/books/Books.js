@@ -9,7 +9,7 @@ const FETCHFAILED = 'BookStore/Controller/FETCH_FAILED';
 
 const connection = new NetworkLayer();
 
-export const addBook = ({ name, category, author }) => async (dispatch) => {
+export const addBook = ({ name, category, author }) => (dispatch) => {
   const id = Date.now();
   connection.add(id, name, category, author).then((response) => {
     if (response.status === 201 && response.ok) {
@@ -36,7 +36,7 @@ export const addBook = ({ name, category, author }) => async (dispatch) => {
   });
 };
 
-export const removeBook = (id) => async (dispatch) => {
+export const removeBook = (id) => (dispatch) => {
   connection.remove(id).then((response) => {
     if (response.status === 201 && response.ok) {
       dispatch(
@@ -56,7 +56,7 @@ export const removeBook = (id) => async (dispatch) => {
   });
 };
 
-export const fetchAllBooks = () => async (dispatch) => {
+export const fetchAllBooks = () => (dispatch) => {
   connection.fetch().then((response) => {
     if (response.status === 200 && response.ok) {
       response.json().then((data) => {
@@ -64,7 +64,7 @@ export const fetchAllBooks = () => async (dispatch) => {
         const bkData = [];
         keys.forEach((key) => {
           bkData.push({
-            id: key,
+            id: parseInt(key, 10),
             name: data[key][0].title,
             category: data[key][0].category,
             author: data[key][0].author,

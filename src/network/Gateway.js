@@ -4,7 +4,7 @@ class NetworkGateway {
     this.uniqueDbKey = 'QTu3Qp04ZM6QEeUDccqe';
   }
 
-  add = async (_id, _name, _author, _category) => {
+  add = async (_id, _name, _category, _author) => {
     const data = await fetch(`${this.baseUrl}${this.uniqueDbKey}/books`, {
       method: 'POST',
       headers: {

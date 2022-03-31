@@ -24,5 +24,6 @@ select {
 }
 
 .desc {
-  color: #9c9c9c;
+  color: #838181;
+  font-weight: bold;
 }
