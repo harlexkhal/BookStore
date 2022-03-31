@@ -1,0 +1,29 @@
+.main input,
+select {
+  margin-right: 20px;
+}
+
+.main input {
+  padding: 10px;
+  border: 1px solid rgb(206, 206, 206);
+  width: 40%;
+}
+
+.main select {
+  padding: 10px;
+  border: 1px solid rgb(212, 212, 212);
+  width: 30%;
+}
+
+.main button {
+  padding: 10px;
+  border: 0 solid #fff;
+  width: 13%;
+  background-color: #2274ee;
+  color: #fff;
+}
+
+.desc {
+  color: #838181;
+  font-weight: bold;
+}
