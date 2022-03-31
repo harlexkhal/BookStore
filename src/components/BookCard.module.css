@@ -26,10 +26,6 @@
   color: #2274ee;
 }
 
-.disabled {
-  color: #b9b9b9;
-}
-
 .mtminus26px {
   margin-top: -26px;
 }
@@ -42,10 +38,11 @@
 .chart {
   width: 60px;
   height: 60px;
-  border: 10px solid #f3f3f3;
+  border: 5px solid #f3f3f3;
   border-radius: 50%;
-  border-right: 10px solid #2274ee;
-  border-bottom: 10px solid #2274ee;
+  border-right: 5px solid #2274ee;
+  border-bottom: 5px solid #2274ee;
+  border-left: 5px solid #2274ee;
   margin-right: 10px;
 }
 
@@ -65,4 +62,11 @@
   background-color: #2274ee;
   border: 0 solid #fff;
   color: #fff;
+  font-weight: 300;
+}
+
+.divline {
+  width: 80%;
+  margin-top: 40px;
+  margin-bottom: 35px;
 }

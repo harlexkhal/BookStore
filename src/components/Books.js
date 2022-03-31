@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fetchAllBooks } from '../redux/books/Books';
+import book from './BookCard.module.css';
 import BookCard from './BookCard';
 
 const Books = ({ books }) => {
@@ -25,7 +26,10 @@ const Books = ({ books }) => {
   });
 
   return (
-    booklist
+    <div className="pt-12">
+      {booklist}
+      <hr className={book.divline} />
+    </div>
   );
 };
 
@@ -38,7 +42,4 @@ Books.propTypes = {
   }).isRequired).isRequired,
 };
 
-Books.defaultProps = {
-  books: [],
-};
 export default Books;

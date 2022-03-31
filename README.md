@@ -2,7 +2,7 @@
 
 > "BookStore" is a web app for adding and removing books from a library storage. It is a Single Page App (SPA) that allows users to add and remove a book
 
-![screenshot](branding/brand-demo.png)
+![screenshot](branding/brand.png)
 
 Our goal here is to Build a single page web application for book weebs using the React library
 
@@ -18,6 +18,8 @@ Click [here](https://harlexkhal.github.io/BookStore/) to view live demo
 - React (A free and open-source front-end JavaScript library for building user interfaces based on UI components)
 - React Testing Library
 - React Router v6
+- Redux
+- React MUI font icons
 - Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
 - ESlint (A mighty, modern linter that helps you avoid errors and enforce conventions in JavaScript codes)
 

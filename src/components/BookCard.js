@@ -11,14 +11,15 @@ const BookCard = ({
   return (
     <div className={book.card}>
       <div className="ml-2">
-        <h4>{category}</h4>
-        <h1 className={book.mtminus26px}>{name}</h1>
-        <p className={book.mtminus26px}>{author}</p>
+        <h5 className="primary-font disabled-black">{category}</h5>
+        <h1 className={`secondary-font ${book.mtminus26px}`}>{name}</h1>
+        <p className={`secondary-font cl-blue ${book.mtminus26px}`}>{author}</p>
         <ul className={book.action}>
-          <li className={book.disabled}>Comments</li>
+          <li className="secondary-font cl-blue disabled-blue">Comments</li>
           <li><hr className={book.actionline} /></li>
           <li>
             <button
+              className="secondary-font cl-blue fz-16"
               type="button"
               onClick={() => {
                 dispatch(removeBook(id));
@@ -28,20 +29,20 @@ const BookCard = ({
             </button>
           </li>
           <li><hr className={book.actionline} /></li>
-          <li className={book.disabled}>Edit</li>
+          <li className="secondary-font cl-blue disabled-blue">Edit</li>
         </ul>
       </div>
       <div className={book.progress}>
         <div className={book.chart} />
         <div>
-          <h1>50%</h1>
-          <p className={book.completed}>Completed</p>
+          <h1 className="primary-font mb-3">75%</h1>
+          <p className={`primary-font disabled-black ${book.completed}`}>Completed</p>
         </div>
       </div>
       <div className="mr-7">
-        <p>Current Chapter</p>
-        <p>Chapter 17</p>
-        <button type="button" className={book.btn}>UPDATE PROGRESS</button>
+        <p className="primary-font disabled-black">Current Chapter</p>
+        <p className="primary-font">Chapter 17</p>
+        <button type="button" className={`primary-font ${book.btn}`}>UPDATE PROGRESS</button>
       </div>
     </div>
   );

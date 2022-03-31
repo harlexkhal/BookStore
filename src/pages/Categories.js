@@ -7,15 +7,17 @@ const Page = () => {
   const status = useSelector((state) => state.categories);
   const dispatch = useDispatch();
   return (
-    <button
-      type="button"
-      className={categories.btn}
-      onClick={() => {
-        dispatch(setCategoryStatus('Under Construction, Come back later 🙂'));
-      }}
-    >
-      {status}
-    </button>
+    <div className="pt-12">
+      <button
+        type="button"
+        className={categories.btn}
+        onClick={() => {
+          dispatch(setCategoryStatus('Under Construction, Come back later 🙂'));
+        }}
+      >
+        {status}
+      </button>
+    </div>
   );
 };
 

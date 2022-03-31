@@ -17,7 +17,7 @@ const Form = () => {
 
   return (
     <div className="ml-x">
-      <h2 className={form.desc}>ADD NEW BOOK</h2>
+      <h4 className={`primary-font ${form.desc}`}>ADD NEW BOOK</h4>
       <form
         className={form.main}
         onSubmit={(e) => {
@@ -32,6 +32,7 @@ const Form = () => {
       >
         <input
           type="text"
+          className="primary-font disabled-black"
           placeholder="Book title"
           ref={(node) => { inputName = node; }}
           onChange={(e) => {
@@ -41,8 +42,10 @@ const Form = () => {
             };
             setState(State);
           }}
+          maxLength="28"
         />
         <select
+          className="primary-font disabled-black"
           ref={(node) => { inputCategory = node; }}
           onChange={(e) => {
             const State = {
@@ -56,8 +59,12 @@ const Form = () => {
           <option value="Action">Action</option>
           <option value="Romance">Romance</option>
           <option value="Horror">Horror</option>
+          <option value="Educational">Educational</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Non Fiction">Non Fiction</option>
+          <option value="Adventure">Adventure</option>
         </select>
-        <button type="submit">ADD BOOK</button>
+        <button type="submit" className="secondary-font">ADD BOOK</button>
       </form>
     </div>
   );
